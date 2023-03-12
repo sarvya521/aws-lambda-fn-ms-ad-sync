@@ -1,0 +1,7 @@
+adTokenEndpoint: https://login.microsoftonline.com/{0}/oauth2/v2.0/token
+listUsersEndpoint: https://graph.microsoft.com/v1.0/users
+datasource:
+  url: ${DB_URL:-jdbc:mysql://mysql8_sp/spdb?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC}
+  username: ${DB_USER:-spadmin}
+  password: ${DB_PASSWORD:-spadmin}
+  batchSize: 100
